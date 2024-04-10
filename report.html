@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- boostrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- boostrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- boostrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .demo li:hover {
+        background-color: blue;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav bar heading start -->
+    <div class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid navbar-brand">
+          <i class="fa-solid fa-car-side text-primary pe-2"></i>
+          SPMS Panel
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item nav-link active">
+                <img src="icon/user.png" width="30" height="30" /> Welcome,
+                Adminstrator
+              </li>
+              <li class="nav-item nav-link">
+                <button class="btn btn-primary"><i class="bi bi-power"></i>Logout</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- niv bar heading end -->
+      <!-- side bar start -->
+      <div class="d-flex felx-row">
+        <div class="bg-dark col-3">
+          <ul class="demo" style="color: white; list-style-type: none">
+            <li class="p-3">
+              <a href="dashbord.html">
+                <i class="bi bi-speedometer2"></i> DashBord</a
+              >
+            </li>
+            <li class="p-3">
+              <a href="category1.html"
+                ><i class="bi bi-ui-checks-grid"></i> Category</a
+              >
+            </li>
+            <li class="p-3">
+              <a href="vehicle1.html">
+                <i class="bi bi-box-arrow-in-right"></i> Vehicle Entry</a
+              >
+            </li>
+            <li class="p-3">
+              <a href="manage1.html"
+                ><i class="bi bi-list-check"></i> Manage Vehicle</a
+              >
+            </li>
+            <li class="p-3">
+              <a href="report.html"
+                ><i class="bi bi-graph-up-arrow"></i> Reports</a
+              >
+            </li>
+            <li class="p-3">
+              <a href="search.html"><i class="bi bi-search"></i> Search</a>
+            </li>
+            <li class="p-3">
+              <a href="account.html"
+                ><i class="bi bi-gear-fill"></i> Account Setting</a
+              >
+            </li>
+            <li class="p-3">
+              <a href=""><i class="bi bi-power"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+        <!-- side bar end -->
+        <div class="container" id="userform">
+          <div class="row g-2">
+            <div class="col-12 p-4">
+              <div class="border bg-light">
+                <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><i class="bi bi-search"></i> Search Data | Only the record of the last 30 days are available here</a>
+                </div>
+              </nav>
+            </div>
+            <nav class="navbar navbar-light bg-light">
+              <div class="container-fluid">
+                <form class="d-flex col-12 ps-5">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+              </div>
+            </nav>
+            <table class="table table-bordered">
+              <thead  class="table-active">
+              <th>#</th>
+              <th>Vehicle Number</th>
+              <th>Type</th>
+              <th>Area</th>
+              <th>Charge</th>
+              <th>Arrival Time</th>
+              <th>Status</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>34</td>
+                  <td>GBN-2306</td>
+                  <td>Car Type 101</td>
+                  <td>1</td>
+                  <td>$7.00</td>
+                  <td>2022-07-04 09:29:13</td>
+                  <td>
+                  <button type="button" class="rounded-pill btn btn-danger">Leaved</button>
+                    </td>
+                </tr>
+                <tr>
+                  <td>36</td>
+                  <td>GBN-2306</td>
+                  <td>Car</td>
+                  <td>2</td>
+                  <td>$4.00</td>
+                  <td>2022-07-04 09:29:13</td>
+                  <td>
+                  <button type="button" class="rounded-pill btn btn-success">Parked</button>
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
